@@ -24,6 +24,6 @@ def dump(index):
         page_index += 1
         print(f"page = {page_index}")
 
-indicies = ["seasons", "products", "sku", "collection_mapping"]
+indicies = ["seasons", "products", "sku", "collection_mapping", "category"]
 for index in indicies:
     dump(index)

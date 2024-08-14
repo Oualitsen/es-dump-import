@@ -41,7 +41,7 @@ def index_data(data, index_name):
         bulk_request += f"{json.dumps(element)}\n"
     requests.post(request_url, data=bulk_request, headers={'Content-Type': 'application/json'})
 
-indicies = ["seasons", "products", "sku", "collection_mapping"]
+indicies = ["seasons", "products", "sku", "collection_mapping", "category"]
 
 for index in indicies:
     import_data(index, f"{index}")
